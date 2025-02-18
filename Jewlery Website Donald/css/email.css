@@ -1,0 +1,55 @@
+
+.email_section{
+
+
+  gap: 30px;
+  max-width: 90%;
+  height: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	
+}
+
+email.container {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+    margin: 50px;
+    padding: 50px;
+}
+
+input[type="email"] {
+   width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.email_button {
+  width: 30%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: #d9d8d7;
+  padding: 5px 5px;
+  transition: all .7s ease;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none; /* Remove default button border */
+  margin-left: 400px;
+}
+.email_button:hover {
+  background-color: #de45d6;
+   transform: scale(1.2);
+  color: black;
+  transition: all .5s ease;
+}
+
+#message {
+    margin-top: 10px;
+    color: green;
+}

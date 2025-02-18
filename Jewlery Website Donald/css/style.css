@@ -1,0 +1,374 @@
+
+
+html {
+	scroll-behavior: smooth;
+	overscroll-behavior: none;
+}
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+  overflow-x: hidden;
+
+}
+
+@keyframes gradient { 0%
+	{
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    background-color:none;
+	text-align: center;
+    padding: 10px;
+  top:0;
+  width: 100%;
+}
+header {
+    background-color:none;
+	text-align: center;
+    padding: 0px;
+  top:0;
+  width: 100%;
+}
+.nav {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+  flex-wrap: nowrap; 
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding:0 auto;
+}
+
+.nav li {
+  display: inline-block; 
+padding: 20px auto;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  background-color:black;
+ text-decoration: none; 
+  color: white;
+  transition: all 1.0s ease;
+  transform: scale(1.1);
+
+}
+h2{
+	text-align: Center
+}
+
+.hero {
+    background: linear-gradient(-45deg,#c0c0c0, #ffd700, #c0c0c0, #ffe257);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    text-align: center;
+    padding: 20px;
+	margin: auto;
+	max-width: 90%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	
+}
+.featured-products {
+  display: flex;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack products vertically */
+  }
+}
+
+.product {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    max-width: 100%; /* Make products full width */
+  }
+}
+.featured-products :hover {
+  background-color: #d9d8d7;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all .7s ease;
+}
+
+#my-button {
+  background-color: #d9d8d7;
+  padding: 5px 5px;
+  transition: all .7s ease;
+  border-radius: 4px;
+  text-decoration: none; /* Remove underline from anchor tag */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Indicate clickable element on hover */
+  display: inline-block; /* Allow buttons to sit side-by-side */
+  margin: 10px; /* Add some spacing between buttons (optional) */
+ 
+}
+
+
+
+/* Style the buttons when hovered over */
+#my-button:hover {
+  background-color: #de45d6;
+   transform: scale(1.2);
+  color: black;
+  transition: all .5s ease;
+}
+
+
+#product-image {
+	 width: 300px;
+    height: 300px; /* Or any desired height */
+    object-fit: cover; /* Crop the image to fit the container */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+ transform: scale(1.1);
+}
+		
+
+ .contact {
+    text-align: center;
+    padding: 20px;
+	max-width: 90%;
+      margin: 40px auto;
+      background: #fff;
+	  border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ #contact-form{
+	text-align: left;
+    padding: 20px;
+      margin: 40px auto;
+	  display: flex;
+	  border-radius: 10px;
+	  border: 4px solid #c9ccd1;
+ flex-direction: column;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #form-header{
+	 text-align: center;
+	 border: 2px solid #c9ccd1;
+	border-radius: 25px;	
+	padding: 5px;
+	color:black;
+	background-color:#c9ccd1;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ 
+ 
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+ input, textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+ textarea {
+  resize: none;
+  height: 100px;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #555;
+}	
+ .about-us {
+      max-width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	  border-radius: 8px;
+    }
+
+    .about-us img {
+      width: 100%;
+	  height:500px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .about-us h2 {
+      color: #444;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-us p {
+      color: #555;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+.footer {
+	text-align: center;
+    padding: 20px;
+	max-width: 90%;
+	height:100%;
+      margin: 40px auto;
+      background:#c9ccd1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.socials {
+	justify-content: center; /* Center items within the container */
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display items inline */
+  gap: 20px; /* Add space between items */
+  padding: 20px; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  
+}
+
+
+.socials li {
+  display: inline-block; /* Ensure items respect spacing and size */
+}
+
+
+.socials .links {
+	color:#4582de;
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Adjust font size */
+  transition: all .7s ease; /* Smooth hover effect */
+  display: flex; /* Align text and icon inline */
+  align-items: center; /* Center text and icon vertically */
+  gap: 5px; /* Space between icon and text */
+}
+
+
+.socials .links:hover {
+  color: #de45d6; /* Change to a new color (blue for hover) */
+  transform: scale(1.3); /* Slightly enlarge the link */
+  transition: all .5s ease;
+}
+
+
+
+#stars, #stars2, #stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 
+    500px 1000px rgb(221, 107, 8), 1200px 150px #ddb70d, 200px 700px #ec8c06, 
+    800px 1200px #e78712, 50px 50px #e0790c, 100px 600px #d96405, 800px 900px #e75c06, 300px 1000px #e05905,
+    1500px 1200px #d3430a, 500px 200px #d6740b; /* Add more manually if needed */
+  animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 
+    100px 600px #d96405, 800px 900px #e75c06, 300px 1000px #e05905,
+    1500px 1200px #d3430a, 500px 200px #d6740b, 100px 800px #d96405, 800px 1000px #e75c06, 600px 1000px #e05905,
+    1500px 100px #d3430a, 500px 700px #d6740b;  /* Add more manually if needed */
+  animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 
+    200px 600px #e16309, 400px 1100px #b5590e, 900px 1500px #cd4d12,
+    1300px 1000px #cb4b05, 700px 200px #c16107, 500px 900px #d96405, 300px 700px #e75c06, 900px 1000px #e05905,
+    700px 1200px #d3430a, 500px 300px #d6740b; ; /* Add more manually if needed */
+  animation: animStar 150s linear infinite;
+}
+#stars4 {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 
+    800px 1000px hsl(35, 90%, 48%), 1200px 550px #ddb70d, 300px 1200px #ec8c06, 
+    800px 1400px #e78712, 50px 50px #e0790c, 100px 700px #d96405, 100px 900px #e75c06, 300px 1050px #e05905,
+    1500px 1000px #d3430a, 500px 700px #d6740b; ; /* Add more manually if needed */
+  animation: animStar 70s linear infinite;
+}
+
+#stars5 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 
+    100px 700px #d96405, 850px 400px #e75c06, 350px 100px #e05905,
+    1500px 120px #d3430a, 50px 200px #d6740b, 100px 60px #d96405, 800px 90px #e75c06, 300px 100px #e05905,
+    1500px 120px #d3430a, 50px 200px #d6740b;  /* Add more manually if needed */
+  animation: animStar 110s linear infinite;
+}
+
+#stars6 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 
+    200px 30px #e16309, 90px 1100px #b5590e, 400px 150px #cd4d12,
+    130px 500px #cb4b05, 700px 80px #c16107, 10px 600px #d96405, 80px 900px #e75c06, 300px 100px #e05905,
+    1500px 120px #d3430a, 50px 200px #d6740b;  /* Add more manually if needed */
+  animation: animStar 130s linear infinite;
+}
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+
+
+
